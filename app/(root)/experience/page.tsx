@@ -8,8 +8,8 @@ import { pagesConfig } from "@/config/pages";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export const metadata: Metadata = {
-    title: "Experience",
-    description: "Examples of cards built using the components.",
+    title: "Projets",
+    description: "Découvrez mes projets.",
 };
 
 function ProjectContainer({
@@ -55,9 +55,9 @@ export default function ExperiencePage() {
             />
             <Tabs defaultValue="all" className="w-full">
                 <TabsList className="conatiner grid max-w-[30rem] grid-cols-3">
-                    <TabsTrigger value="all">All</TabsTrigger>
-                    <TabsTrigger value="personal">Personal</TabsTrigger>
-                    <TabsTrigger value="professional">Professional</TabsTrigger>
+                    <TabsTrigger value="all">Tous</TabsTrigger>
+                    <TabsTrigger value="personal">Personnels</TabsTrigger>
+                    <TabsTrigger value="professional">Scolaires</TabsTrigger>
                 </TabsList>
                 <TabsContent value="all" className="w-full">
                     {renderContent("all")}

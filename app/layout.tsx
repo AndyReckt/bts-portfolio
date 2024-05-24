@@ -2,7 +2,6 @@ import "./globals.css";
 
 import { Inter as FontSans } from "next/font/google";
 import localFont from "next/font/local";
-import { GoogleAnalytics } from "@next/third-parties/google";
 
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
@@ -41,18 +40,18 @@ export const metadata = {
     ],
     authors: [
         {
-            name: "namanbarkiya",
-            url: "https://namanbarkiya.com",
+            name: "Akexandre Nede",
+            url: "https://alexandre-nede-portfolio.exah.cc",
         },
     ],
-    creator: "namanbarkiya",
+    creator: "andyreckt",
     themeColor: [
         { media: "(prefers-color-scheme: light)", color: "white" },
         { media: "(prefers-color-scheme: dark)", color: "black" },
     ],
     openGraph: {
         type: "website",
-        locale: "en_US",
+        locale: "fr_FR",
         url: siteConfig.url,
         title: siteConfig.name,
         description: siteConfig.description,
@@ -63,7 +62,7 @@ export const metadata = {
         title: siteConfig.name,
         description: siteConfig.description,
         images: [`${siteConfig.url}/og.jpg`],
-        creator: "@namanbarkiya",
+        creator: "@andyysucks",
     },
     icons: {
         icon: "https://res.cloudinary.com/dbfvcn3f6/image/upload/v1692357384/assets/naman-favicon.ico",
@@ -75,11 +74,6 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }: RootLayoutProps) {
-    const GA_ID = process.env.NEXT_PUBLIC_GOOGLE_MEASUREMENT_ID;
-    if (!GA_ID) {
-        throw new Error("Missing Google Analytics ID");
-    }
-
     return (
         <html lang="en" suppressHydrationWarning>
             <head />
@@ -102,7 +96,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
                     {/* <TailwindIndicator /> */}
                 </ThemeProvider>
             </body>
-            <GoogleAnalytics gaId={GA_ID} />
         </html>
     );
 }

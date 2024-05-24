@@ -1,4 +1,4 @@
-import { BiLaugh, BiSolidUser } from "react-icons/bi";
+import { BiLaugh, BiLogoJava, BiSolidUser } from "react-icons/bi";
 import { BsInfoCircle, BsQuestionCircle } from "react-icons/bs";
 import { AiFillStar } from "react-icons/ai";
 import {
@@ -59,10 +59,17 @@ import {
     SiGmail,
     SiLinkedin,
     SiTwitter,
+    SiKotlin,
+    SiPhp,
+    SiRedis,
 } from "react-icons/si";
 import { IoIosGitBranch } from "react-icons/io";
 
 export const Icons = {
+    redis: SiRedis,
+    php: SiPhp,
+    kotlin: SiKotlin,
+    java: BiLogoJava,
     contact: Phone,
     gitRepoIcon: BookMarked,
     gitOrgBuilding: Building,

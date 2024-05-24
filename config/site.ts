@@ -1,11 +1,11 @@
 export const siteConfig: any = {
-    name: "Naman Barkiya",
+    name: "Alexandre Nede",
     description:
-        "An open source application built using the new router, server components and everything new in Next.js 13.",
-    url: "https://namanbarkiya.com",
+        "",
+    url: "https://alexandre-nede-portfolio.exah.cc",
     ogImage: "https://namanbarkiya.com/og.jpg",
     links: {
-        twitter: "https://twitter.com/naman",
-        github: "https://github.com/naman-barkiya",
+        twitter: "https://twitter.com/andyysucks",
+        github: "https://github.com/andyreckt",
     },
 };

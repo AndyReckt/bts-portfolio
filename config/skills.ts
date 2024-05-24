@@ -9,153 +9,110 @@ export interface skillsInterface {
 
 export const skillsUnsorted: skillsInterface[] = [
     {
+        name: "Java",
+        description:
+            "Developper des applications logicielles robustes en utilisant le langage de programmation orienté objet.",
+        rating: 5,
+        icon: Icons.java,
+    },
+    {
+        name: "Kotlin",
+        description:
+            "Construire des applications modernes et performantes avec un langage de programmation concis.",
+        rating: 5,
+        icon: Icons.kotlin,
+    },
+    {
+        name: "Typescript",
+        description:
+            "Augmenter la productivité et la qualité du code en ajoutant un typage statique à JavaScript.",
+        rating: 5,
+        icon: Icons.typescript,
+    },
+    {
         name: "Next.js",
         description:
-            "Effortlessly build dynamic apps with routing, layouts, loading UI, and API routes.",
-        rating: 5,
+            "Créer des applications web modernes performantes avec une expérience de développement améliorée.",
+        rating: 4,
         icon: Icons.nextjs,
     },
     {
         name: "React",
         description:
-            "Craft interactive user interfaces using components, state, props, and virtual DOM.",
-        rating: 5,
+            "Construire des interfaces utilisateur interactives et réactives avec la bibliothèque JavaScript populaire.",
+        rating: 4,
         icon: Icons.react,
-    },
-    {
-        name: "GraphQL",
-        description:
-            "Fetch data precisely with a powerful query language for APIs and runtime execution.",
-        rating: 4,
-        icon: Icons.graphql,
-    },
-    {
-        name: "Nest.js",
-        description:
-            "Create scalable and modular applications with a progressive Node.js framework.",
-        rating: 4,
-        icon: Icons.nestjs,
     },
     {
         name: "express.js",
         description:
-            "Build web applications and APIs quickly using a fast, unopinionated Node.js framework.",
+            "Construire des applications web robustes et évolutives avec le framework Node.js.",
         rating: 5,
         icon: Icons.express,
     },
     {
         name: "Node.js",
         description:
-            "Run JavaScript on the server side, enabling dynamic and responsive applications.",
+            "Exécuter du code JavaScript côté serveur pour construire des applications web évolutives.",
         rating: 5,
         icon: Icons.nodejs,
     },
     {
         name: "MongoDB",
         description:
-            "Store and retrieve data seamlessly with a flexible and scalable NoSQL database.",
+            "Stocker des données non structurées et semi-structurées pour des applications modernes.",
         rating: 5,
         icon: Icons.mongodb,
     },
     {
-        name: "Typescript",
-        description:
-            "Enhance JavaScript with static types, making code more understandable and reliable.",
-        rating: 5,
-        icon: Icons.typescript,
-    },
-    {
         name: "Javascript",
         description:
-            "Create interactive and dynamic web experiences with the versatile scripting language.",
+            "Créer des applications web interactives et dynamiques avec le langage de programmation client.",
         rating: 5,
         icon: Icons.javascript,
     },
     {
         name: "HTML 5",
         description:
-            "Structure web content beautifully with the latest version of HyperText Markup Language.",
+            "Créer des pages web sémantiques et accessibles avec la dernière itération de HTML.",
         rating: 4,
         icon: Icons.html5,
     },
     {
         name: "CSS 3",
         description:
-            "Style web pages creatively with the latest iteration of Cascading Style Sheets.",
-        rating: 4,
+            "Styliser les pages web avec des mises en page modernes et des animations fluides.",
+        rating: 3,
         icon: Icons.css3,
     },
     {
-        name: "React Native",
-        description:
-            "Develop cross-platform mobile apps using React for consistent and engaging experiences.",
-        rating: 4,
-        icon: Icons.react,
-    },
-    {
-        name: "Angular",
-        description:
-            "Build dynamic web apps with a TypeScript-based open-source framework by Google.",
-        rating: 3,
-        icon: Icons.angular,
-    },
-    {
-        name: "Redux",
-        description:
-            "Manage app state effectively using a predictable and centralized state container.",
-        rating: 4,
-        icon: Icons.redux,
-    },
-    {
-        name: "Socket.io",
-        description:
-            "Enable real-time, bidirectional communication between clients and servers effortlessly.",
-        rating: 3,
-        icon: Icons.socketio,
-    },
-    {
-        name: "Material UI",
-        description:
-            "Create stunning and responsive UIs with a popular React UI framework.",
-        rating: 4,
-        icon: Icons.mui,
-    },
-
-    {
         name: "Tailwind CSS",
         description:
-            "Design beautiful, modern websites faster with a utility-first CSS framework.",
-        rating: 5,
-        icon: Icons.tailwindcss,
-    },
-    {
-        name: "AWS",
-        description:
-            "Utilize Amazon Web Services to build and deploy scalable, reliable, and secure applications.",
+            "Construire des interfaces utilisateur modernes et réactives avec un framework CSS utilitaire.",
         rating: 3,
-        icon: Icons.amazonaws,
-    },
-    {
-        name: "Bootstrap",
-        description:
-            "Quickly create responsive and appealing web designs using a popular CSS framework.",
-        rating: 2,
-        icon: Icons.bootstrap,
+        icon: Icons.tailwindcss,
     },
     {
         name: "MySQL",
         description:
-            "Manage and organize relational databases efficiently for data-driven applications.",
-        rating: 2,
+            "Stockez des données structurées pour des applications web évolutives et performantes.",
+        rating: 3,
         icon: Icons.mysql,
     },
     {
-        name: "Netlify",
+        name: "Php",
         description:
-            "Manage and organize relational databases efficiently for data-driven applications.",
-        rating: 4,
-        icon: Icons.netlify,
+            "Développer des applications web dynamiques et interactives avec le langage de script côté serveur.",
+        rating: 3,
+        icon: Icons.php,
     },
+    {
+        name: "Redis",
+        description:
+            "Stockez des données en mémoire pour des applications à haute performance.",
+        rating: 5,
+        icon: Icons.redis,
+    }
 ];
 
 export const skills = skillsUnsorted

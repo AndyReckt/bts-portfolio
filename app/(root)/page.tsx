@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import namanImg from "@/public/naman-img.jpg";
+import namanImg from "@/public/IMG_1601.jpg";
 import SkillsCard from "@/components/skills-card";
 import { cn } from "@/lib/utils";
 import { Button, buttonVariants } from "@/components/ui/button";
@@ -44,14 +44,14 @@ export default async function IndexPage() {
                         width={100}
                         sizes="100vw"
                         className="bg-primary rounded-full mb-0 h-auto md:mb-2 w-[60%] max-w-[16rem] border-8 border-primary dark:border-white dark:bg-white"
-                        alt="naman-barkiya-img"
+                        alt="pfp"
                     />
                     {/* </div> */}
                     <h1 className="font-heading text-3xl sm:text-5xl md:text-6xl lg:text-7xl">
-                        Naman Barkiya
+                        Alexandre NEDE
                     </h1>
                     <h3 className="font-heading text-base sm:text-xl md:text-xl lg:text-2xl">
-                        Full Stack Developer
+                        Etudiant en BTS Sio Slam
                     </h3>
                     {/* <Accordion
                         type="single"
@@ -94,7 +94,7 @@ export default async function IndexPage() {
                     </p> */}
                     <div className="flex flex-col  mt-10 items-center justify-center sm:flex-row sm:space-x-4 gap-3">
                         <Link
-                            href={"https://github.com/namanbarkiya"}
+                            href={"https://github.com/andyreckt"}
                             target="_blank"
                             className={cn(buttonVariants({ size: "lg" }))}
                         >

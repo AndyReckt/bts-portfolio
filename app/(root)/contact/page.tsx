@@ -7,7 +7,7 @@ import { pagesConfig } from "@/config/pages";
 
 export const metadata: Metadata = {
     title: "Contact",
-    description: "Examples of cards built using the components.",
+    description: "Contactez-moi",
 };
 
 export default function ContactPage() {

@@ -20,11 +20,11 @@ import { Icons } from "../icons";
 
 const formSchema = z.object({
     name: z.string().min(3, {
-        message: "Name must contain at least 3 characters.",
+        message: "Le nom doit contenir au moins 3 caractères.",
     }),
-    email: z.string().email("Please enter a valid email."),
+    email: z.string().email("Veuillez entrer une adresse email valide."),
     message: z.string().min(10, {
-        message: "Please write something more descriptive.",
+        message: "Le message doit contenir au moins 10 caractères.",
     }),
     social: z.string().url().optional().or(z.literal("")),
 });
@@ -59,9 +59,9 @@ export function ContactForm() {
 
             if (response.status === 200) {
                 storeModal.onOpen({
-                    title: "Thankyou!",
+                    title: "Merci",
                     description:
-                        "Your message has been received! I appreciate your contact and will get back to you shortly.",
+                        "Votre message a bien été envoyé. Je vous répondrai dès que possible.",
                     icon: Icons.successAnimated,
                 });
             }
@@ -81,10 +81,10 @@ export function ContactForm() {
                     name="name"
                     render={({ field }) => (
                         <FormItem>
-                            <FormLabel>Name</FormLabel>
+                            <FormLabel>Nom</FormLabel>
                             <FormControl>
                                 <Input
-                                    placeholder="Enter your name"
+                                    placeholder="Alexandre NEDE"
                                     {...field}
                                 />
                             </FormControl>
@@ -103,7 +103,7 @@ export function ContactForm() {
                             <FormLabel>Email</FormLabel>
                             <FormControl>
                                 <Input
-                                    placeholder="Enter your email"
+                                    placeholder="vous@example.com"
                                     {...field}
                                 />
                             </FormControl>
@@ -119,7 +119,7 @@ export function ContactForm() {
                             <FormLabel>Message</FormLabel>
                             <FormControl>
                                 <Textarea
-                                    placeholder="Enter your message"
+                                    placeholder="Votre message"
                                     {...field}
                                 />
                             </FormControl>
@@ -132,10 +132,10 @@ export function ContactForm() {
                     name="social"
                     render={({ field }) => (
                         <FormItem>
-                            <FormLabel>Social (optional)</FormLabel>
+                            <FormLabel>Réseau social (optional)</FormLabel>
                             <FormControl>
                                 <Input
-                                    placeholder="Link for social account"
+                                    placeholder="Compte Twitter, LinkedIn, etc."
                                     {...field}
                                 />
                             </FormControl>

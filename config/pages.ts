@@ -10,18 +10,18 @@ type PagesConfig = {
 
 export const pagesConfig: PagesConfig = {
     skills: {
-        title: "Skills",
-        description: "Key skills that define my professional identity.",
+        title: "Compétences",
+        description: "Mes compétences",
         // featuredDescription: "Skill Showcase",
     },
     experience: {
-        title: "Experience",
-        description: "Highlighting career journey and impactful projects.",
+        title: "Projets",
+        description: "Mes projets",
         // featuredDescription: "Work Timeline",
     },
     contact: {
         title: "Contact",
-        description: "Let's connect and explore collaborations.",
+        description: "Contactez-moi",
         // featuredDescription: "Get in Touch",
     },
     contributions: {
@@ -29,4 +29,9 @@ export const pagesConfig: PagesConfig = {
         description: "Open-source contributions and community involvement.",
         // featuredDescription: "Contributions Showcase",
     },
+    resume: {
+        title: "Curriculum Vitae",
+        description: "Mon CV",
+        // featuredDescription: "Resume Showcase",
+    }
 };

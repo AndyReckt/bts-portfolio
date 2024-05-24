@@ -7,7 +7,7 @@ import { Icons } from "@/components/icons";
 import { buttonVariants } from "@/components/ui/button";
 import { cn, formatDateFromObj } from "@/lib/utils";
 import { Experiences } from "@/config/experience";
-import namanImg from "@/public/naman-img.jpg";
+import namanImg from "@/public/transdy.jpg";
 import ChipContainer from "@/components/chip-container";
 import ExperienceDescription from "@/components/exp-desc";
 import CustomTooltip from "@/components/custom-tooltip";
@@ -18,7 +18,7 @@ interface ExperiencePageProps {
     };
 }
 
-const githubUsername = "namanbarkiya";
+const githubUsername = "andyreckt";
 
 export default function Experience({ params }: ExperiencePageProps) {
     let exp = Experiences.find((val) => val.id === params.expId);
