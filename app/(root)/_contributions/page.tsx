@@ -14,8 +14,8 @@ export default function ContributonsPage() {
     return (
         <>
             <PageHeader
-                title={pagesConfig.contributions.title}
-                description={pagesConfig.contributions.description}
+                title=/* {pagesConfig.contributions.title} */ "Disabled"
+                description=/* {pagesConfig.contributions.description} */ "Disabled" 
             />
             <ContributionCard contributions={contributionsUnsorted} />
         </>
