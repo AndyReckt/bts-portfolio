@@ -131,7 +131,7 @@ export default async function IndexPage() {
                 <SkillsCard skills={featuredSkills} />
                 <Link href="/skills" className="flex justify-center">
                     <Button variant={"outline"} className="rounded-xl">
-                        <Icons.chevronDown className="mr-2 h-4 w-4" /> View All
+                        <Icons.chevronDown className="mr-2 h-4 w-4" /> Voir plus
                     </Button>
                 </Link>
                 {/* <div className="mx-auto text-center md:max-w-[58rem]">
@@ -159,7 +159,7 @@ export default async function IndexPage() {
                 </div>
                 <Link href="/experience" className="flex justify-center">
                     <Button variant={"outline"} className="rounded-xl">
-                        <Icons.chevronDown className="mr-2 h-4 w-4" /> View All
+                        <Icons.chevronDown className="mr-2 h-4 w-4" /> Voir plus
                     </Button>
                 </Link>
                 {/* <div className="mx-auto text-center md:max-w-[58rem]">
@@ -168,7 +168,7 @@ export default async function IndexPage() {
                     </p>
                 </div> */}
             </section>
-            <section
+            {/*<section
                 id="contributions"
                 className="container space-y-6 bg-slate-50 dark:bg-transparent py-10 my-14"
             >
@@ -185,15 +185,15 @@ export default async function IndexPage() {
                 </div>
                 <Link href="/contributions" className="flex justify-center">
                     <Button variant={"outline"} className="rounded-xl">
-                        <Icons.chevronDown className="mr-2 h-4 w-4" /> View All
+                        <Icons.chevronDown className="mr-2 h-4 w-4" /> Voir plus
                     </Button>
                 </Link>
-                {/* <div className="mx-auto text-center md:max-w-[58rem]">
+                {/*<div className="mx-auto text-center md:max-w-[58rem]">
                     <p className="leading-normal text-muted-foreground sm:text-lg sm:leading-7">
                         See all the relevant skills.
                     </p>
-                </div> */}
-            </section>
+                </div> /*}
+            </section>*/}
         </>
     );
 }

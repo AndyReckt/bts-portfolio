@@ -19,7 +19,12 @@ export type ValidSkills =
     | "AWS"
     | "Bootstrap"
     | "Google Auth"
-    | "MySQL";
+    | "Java"
+    | "Python"
+    | "MySQL"
+    | "Redis"
+    | "Docker"
+    | "Hazelcast";
 
 export type ValidCategory =
     | "Full Stack"
@@ -28,8 +33,15 @@ export type ValidCategory =
     | "UI/UX"
     | "Web Dev"
     | "Mobile Dev"
-    | "3D Modeling";
+    | "3D Modeling"
+    | "Game Dev"
+    | "Data Science"
+    | "Machine Learning"
+    | "DevOps"
+    | "Cloud Computing"
+    | "Minecraft"
+    | "Cybersecurity";
 
 export type ValidExpType = "Personal Project" | "Professional";
 
-export type ValidPages = "skills" | "experience" | "contact" | "contributions" | "resume";
+export type ValidPages = "skills" | "experience" | "contact" | /*"contributions" |*/ "resume";

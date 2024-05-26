@@ -9,6 +9,13 @@ export interface skillsInterface {
 
 export const skillsUnsorted: skillsInterface[] = [
     {
+        name: "Git",
+        description:
+            "Collaborer sur des projets de code source en utilisant un système de contrôle de version distribué.",
+        rating: 5,
+        icon: Icons.git,
+    },
+    {
         name: "Java",
         description:
             "Developper des applications logicielles robustes en utilisant le langage de programmation orienté objet.",
@@ -47,7 +54,7 @@ export const skillsUnsorted: skillsInterface[] = [
         name: "express.js",
         description:
             "Construire des applications web robustes et évolutives avec le framework Node.js.",
-        rating: 5,
+        rating: 4,
         icon: Icons.express,
     },
     {

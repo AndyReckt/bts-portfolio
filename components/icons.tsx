@@ -62,10 +62,12 @@ import {
     SiKotlin,
     SiPhp,
     SiRedis,
+    SiGit,
 } from "react-icons/si";
 import { IoIosGitBranch } from "react-icons/io";
 
 export const Icons = {
+    git: SiGit,
     redis: SiRedis,
     php: SiPhp,
     kotlin: SiKotlin,

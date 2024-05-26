@@ -36,7 +36,7 @@ export default function Experience({ params }: ExperiencePageProps) {
                 )}
             >
                 <Icons.chevronLeft className="mr-2 h-4 w-4" />
-                All Experience
+                Retour
             </Link>
             <div>
                 <time
@@ -49,14 +49,14 @@ export default function Experience({ params }: ExperiencePageProps) {
                     {exp.companyName}
                     <div className="flex items-center">
                         {exp.githubLink && (
-                            <CustomTooltip text="Link to the source code.">
+                            <CustomTooltip text="Lien vers le code source">
                                 <Link href={exp.githubLink} target="_blank">
                                     <Icons.gitHub className="w-6 ml-4 text-muted-foreground hover:text-foreground" />
                                 </Link>
                             </CustomTooltip>
                         )}
                         {exp.websiteLink && (
-                            <CustomTooltip text="Please note that some project links may be temporarily unavailable.">
+                            <CustomTooltip text="Certains liens peuvent être temporairement indisponibles">
                                 <Link href={exp.websiteLink} target="_blank">
                                     <Icons.externalLink className="w-6 ml-4 text-muted-foreground hover:text-foreground " />
                                 </Link>
@@ -72,14 +72,14 @@ export default function Experience({ params }: ExperiencePageProps) {
                     >
                         <Image
                             src={namanImg}
-                            alt={"naman"}
+                            alt={"Alexandre"}
                             width={42}
                             height={42}
                             className="rounded-full bg-white"
                         />
 
                         <div className="flex-1 text-left leading-tight">
-                            <p className="font-medium">{"Naman Barkiya"}</p>
+                            <p className="font-medium">{"Alexandre NEDE"}</p>
                             <p className="text-[12px] text-muted-foreground">
                                 @{githubUsername}
                             </p>
@@ -114,33 +114,35 @@ export default function Experience({ params }: ExperiencePageProps) {
                     bullets={exp.descriptionDetails.bullets}
                 />
             </div>
-
-            <div className="mb-7 ">
-                <h2 className="inline-block font-heading text-3xl leading-tight lg:text-3xl mb-5">
-                    Page Info
-                </h2>
-                {exp.pagesInfoArr.map((page, ind) => (
-                    <div key={ind}>
-                        <h3 className="flex items-center font-heading text-xl leading-tight lg:text-xl mt-3">
-                            <Icons.star className="h-5 w-5 mr-2" /> {page.title}
-                        </h3>
-                        <div>
-                            <p>{page.description}</p>
-                            {page.imgArr.map((img, ind) => (
-                                <Image
-                                    src={img}
-                                    key={ind}
-                                    alt={img}
-                                    width={720}
-                                    height={405}
-                                    className="my-4 rounded-md border bg-muted transition-colors"
-                                    priority
-                                />
-                            ))}
+            {exp.pagesInfoArr && exp.pagesInfoArr.length > 0 && (
+                <div className="mb-7 ">
+                    <h2 className="inline-block font-heading text-3xl leading-tight lg:text-3xl mb-5">
+                        Infos complémentaires
+                    </h2>
+                    {exp.pagesInfoArr?.map((page, ind) => (
+                        <div key={ind}>
+                            <h3 className="flex items-center font-heading text-xl leading-tight lg:text-xl mt-3">
+                                <Icons.star className="h-5 w-5 mr-2" /> {page.title}
+                            </h3>
+                            <div>
+                                <p>{page.description}</p>
+                                {page.imgArr.map((img, ind) => (
+                                    <Image
+                                        src={img}
+                                        key={ind}
+                                        alt={img}
+                                        width={720}
+                                        height={405}
+                                        className="my-4 rounded-md border bg-muted transition-colors"
+                                        priority
+                                    />
+                                ))}
+                            </div>
                         </div>
-                    </div>
-                ))}
-            </div>
+                    ))}
+                </div>
+            )}
+            
 
             <hr className="mt-12" />
             <div className="flex justify-center py-6 lg:py-10">
@@ -149,7 +151,7 @@ export default function Experience({ params }: ExperiencePageProps) {
                     className={cn(buttonVariants({ variant: "ghost" }))}
                 >
                     <Icons.chevronLeft className="mr-2 h-4 w-4" />
-                    All Experience
+                    Retour
                 </Link>
             </div>
         </article>
