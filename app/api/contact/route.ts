@@ -16,11 +16,15 @@ export async function POST(req: Request) {
 
     try {
         const body = await req.json();
+
+        console.log(JSON.stringify(body));
         const { name, message, social, email } = body;
 
         const res = await fetch(
-            `${formLink}/formResponse?${fieldIdName}=${name}&${fieldIdEmail}=${email}&${fieldIdMessage}=${message}&${fieldIdSocial}=${social}`
+            encodeURI(`${formLink}/formResponse?${fieldIdName}=${name}&${fieldIdEmail}=${email}&${fieldIdMessage}=${message}&${fieldIdSocial}=${social}`)
         );
+
+        console.log(JSON.stringify(res));
 
         return NextResponse.json("Success!");
     } catch (error) {

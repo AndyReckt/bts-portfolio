@@ -1,16 +1,23 @@
-import React from "react";
-import { Metadata } from "next";
+"use client"
+
+import { redirect } from "next/navigation";
+import React, { useEffect } from "react";
+
+// import { Metadata } from "next";
 
 import PageHeader from "@/components/page-header";
-import { ContactForm } from "@/components/forms/contact-form";
+// import { ContactForm } from "@/components/forms/contact-form";
 import { pagesConfig } from "@/config/pages";
 
-export const metadata: Metadata = {
-    title: "Contact",
-    description: "Contactez-moi",
-};
+// export const metadata: Metadata = {
+//     title: "Contact",
+//     description: "Contactez-moi",
+// };
 
 export default function ContactPage() {
+    useEffect(() => {
+        redirect(process.env.NEXT_PUBLIC_GOOGLE_FORM_LINK || "/");
+    }, []);
     return (
         <>
             <PageHeader
@@ -19,7 +26,8 @@ export default function ContactPage() {
             />
             <div className="flex justify-center min-w-full">
                 <div className="flex w-[40rem]">
-                    <ContactForm />
+                <p>Redirection...</p>
+                    {/* <ContactForm /> */}
                 </div>
             </div>
         </>
