@@ -24,11 +24,11 @@ export const pagesConfig: PagesConfig = {
         description: "Contactez-moi",
         // featuredDescription: "Get in Touch",
     },
-    // contributions: {
-    //     title: "Contributions",
-    //     description: "Open-source contributions and community involvement.",
-    //     // featuredDescription: "Contributions Showcase",
-    // },
+    veille: {
+        title: "Veille",
+        description: "Veille technologique.",
+        // featuredDescription: "Contributions Showcase",
+    },
     resume: {
         title: "Curriculum Vitae",
         description: "Mon CV",

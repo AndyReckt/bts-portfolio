@@ -44,4 +44,4 @@ export type ValidCategory =
 
 export type ValidExpType = "Personal Project" | "Professional";
 
-export type ValidPages = "skills" | "experience" | "contact" | /*"contributions" |*/ "resume";
+export type ValidPages = "skills" | "experience" | "contact" | "veille" | "resume";

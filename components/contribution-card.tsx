@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import { contributionsInterface } from "@/config/contributions";
 import { Icons } from "./icons";
+import Image from "next/image";
 
 interface ContributionCardProps {
     contributions: contributionsInterface[];
@@ -23,18 +24,33 @@ export default function ContributionCard({
                         <div className="flex h-[170px] flex-col justify-between rounded-md p-6 sm:h-[170px]">
                             <div className="flex flex-row justify-between">
                                 <h3 className="font-bold flex space-x-2 items-center">
-                                    <Icons.gitRepoIcon size={20} />
-                                    <span>{contribution.repo}</span>
+                                    {/* <Icons.gitRepoIcon size={20} /> */}
+                                    <span>{contribution.nom}</span>
                                 </h3>
-                                <Icons.gitBranch size={20} />
+                                {contribution.ownerImage ? (
+                                    <Image
+                                        src={contribution.ownerImage}
+                                        alt={""}
+                                        width={25}
+                                        height={25}
+                                        className="rounded-full"
+                                    />
+                                ) : (<Icons.gitBranch size={20} />)}
+                                
                             </div>
                             <div className="space-y-4">
                                 <p className="text-sm text-muted-foreground">
-                                    {contribution.contibutionDescription}
+                                    {contribution.description}
                                 </p>
                                 <p className="text-sm text-muted-foreground flex space-x-2 items-center">
-                                    <Icons.gitOrgBuilding size={15} />
-                                    <span>{contribution.repoOwner}</span>
+                                    {
+                                        contribution.type === "Youtube" ? (
+                                            <Icons.youtube size={15} />
+                                        ) : (
+                                            <Icons.gitBranch size={15} />
+                                        )
+                                    }
+                                    <span>{contribution.type}</span>
                                 </p>
                             </div>
                         </div>

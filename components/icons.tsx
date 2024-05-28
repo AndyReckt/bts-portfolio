@@ -34,6 +34,7 @@ import {
     BookMarked,
     Building,
     Phone,
+    Youtube,
 } from "lucide-react";
 import {
     SiAmazonaws,
@@ -67,6 +68,7 @@ import {
 import { IoIosGitBranch } from "react-icons/io";
 
 export const Icons = {
+    youtube: Youtube,
     git: SiGit,
     redis: SiRedis,
     php: SiPhp,

@@ -6,16 +6,16 @@ import ContributionCard from "@/components/contribution-card";
 import { contributionsUnsorted } from "@/config/contributions";
 
 export const metadata: Metadata = {
-    title: "Contributions",
-    description: "Examples of cards built using the components.",
+    title: "Veille",
+    description: "Veille technologique.",
 };
 
 export default function ContributonsPage() {
     return (
         <>
             <PageHeader
-                title=/* {pagesConfig.contributions.title} */ "Disabled"
-                description=/* {pagesConfig.contributions.description} */ "Disabled" 
+                title={pagesConfig.veille.title}
+                description={pagesConfig.veille.description}
             />
             <ContributionCard contributions={contributionsUnsorted} />
         </>
